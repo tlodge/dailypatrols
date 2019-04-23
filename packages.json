@@ -83,28 +83,6 @@
                                 "parent": "62153ab035f3c4",
                                 "children": [
                                     {
-                                        "id": "2c612de28520f",
-                                        "type": "node",
-                                        "parent": "53b3d923e8a36c",
-                                        "children": [
-                                            {
-                                                "id": "30a239cc2cf01c",
-                                                "type": "subtree",
-                                                "parent": null,
-                                                "nodeid": "1f55745ed83339",
-                                                "children": []
-                                            }
-                                        ],
-                                        "rules": [
-                                            {
-                                                "type": "options",
-                                                "values": [
-                                                    "yes"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "id": "1f55745ed83339",
                                         "type": "node",
                                         "parent": "53b3d923e8a36c",
