@@ -1,5 +1,5 @@
 {
-    "packageId": "1ff9ab204c56ec",
+    "packageId": "67fd8ea2c33624",
     "name": "daily patrol",
     "description": "simple button to capture daily patrols",
     "buttons": [
@@ -63,17 +63,8 @@
                     "values": {},
                     "validators": [],
                     "compulsory": true,
-                    "questionId": "2c612de28520f",
-                    "number": 4
-                },
-                {
-                    "question": "take a picture",
-                    "type": "camera",
-                    "values": {},
-                    "validators": [],
-                    "compulsory": true,
                     "questionId": "1ba3edef6dfbb",
-                    "number": 5
+                    "number": 4
                 }
             ],
             "navigation": {
@@ -111,9 +102,10 @@
                                         "parent": "53b3d923e8a36c",
                                         "children": [
                                             {
-                                                "id": "2cd5c6624e0ee2",
-                                                "type": "node",
-                                                "parent": "1ba3edef6dfbb",
+                                                "id": "2c5ad57baf6782",
+                                                "type": "subtree",
+                                                "parent": null,
+                                                "nodeid": "1f55745ed83339",
                                                 "children": []
                                             }
                                         ],
@@ -161,33 +153,6 @@
                         }
                     },
                     "webhookId": "1f55745ed83339"
-                },
-                {
-                    "name": "log endpoint",
-                    "type": "log",
-                    "url": "https://[buttonkit]/api/v1/datastore/log",
-                    "method": "POST",
-                    "contentType": "json",
-                    "parameters": {
-                        "dynamic": {
-                            "presser": [
-                                {
-                                    "id": "2cd5c6624e0ee2_presser",
-                                    "type": "presser"
-                                }
-                            ],
-                            "pressed": [
-                                {
-                                    "id": "2cd5c6624e0ee2_pressed",
-                                    "type": "pressed"
-                                }
-                            ]
-                        },
-                        "static": {
-                            "_datastorename": "patrols"
-                        }
-                    },
-                    "webhookId": "2cd5c6624e0ee2"
                 }
             ]
         },
