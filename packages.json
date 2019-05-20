@@ -1,5 +1,5 @@
 {
-    "packageId": "3775c6cfc53ae6",
+    "packageId": "117ae55ee87608",
     "name": "daily patrol",
     "description": "simple button to capture daily patrols",
     "buttons": [
@@ -250,6 +250,12 @@
                                 "default": ""
                             },
                             {
+                                "id": "2b84221160e4da",
+                                "path": "2b84221160e4da",
+                                "alias": "what kind of issue is it?",
+                                "default": ""
+                            },
+                            {
                                 "id": "62153ab035f3c4",
                                 "path": "62153ab035f3c4",
                                 "alias": "notes",
@@ -273,6 +279,12 @@
                                 "id": "1ad8ec9991e7e",
                                 "path": "1ad8ec9991e7e",
                                 "alias": "patroller",
+                                "default": ""
+                            },
+                            {
+                                "id": "2b84221160e4da",
+                                "path": "2b84221160e4da",
+                                "alias": "what kind of issue is it?",
                                 "default": ""
                             },
                             {
