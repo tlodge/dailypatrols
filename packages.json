@@ -1,5 +1,5 @@
 {
-    "packageId": "2e22265d12cb96",
+    "packageId": "3775c6cfc53ae6",
     "name": "daily patrol",
     "description": "simple button to capture daily patrols",
     "buttons": [
@@ -110,7 +110,14 @@
                                                 "id": "1f55745ed83339",
                                                 "type": "node",
                                                 "parent": "53b3d923e8a36c",
-                                                "children": [],
+                                                "children": [
+                                                    {
+                                                        "id": "1120f1461008f7",
+                                                        "type": "node",
+                                                        "parent": "1f55745ed83339",
+                                                        "children": []
+                                                    }
+                                                ],
                                                 "rules": [
                                                     {
                                                         "type": "options",
@@ -181,6 +188,40 @@
                         }
                     },
                     "webhookId": "1f55745ed83339"
+                },
+                {
+                    "name": "notify endpoint",
+                    "type": "notify",
+                    "url": "https://[buttonkit]/api/v1/send",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": {
+                            "recipients": [],
+                            "placeholders": [
+                                {
+                                    "id": "62153ab035f3c4",
+                                    "qid": "62153ab035f3c4",
+                                    "key": "value",
+                                    "type": "question"
+                                }
+                            ]
+                        },
+                        "static": {
+                            "email": {
+                                "subject": "new issue reported",
+                                "body": "A new issue has been reported by staff at Wharfside point. Notes are as follows: [62153ab035f3c4]"
+                            },
+                            "sms": {
+                                "body": ""
+                            },
+                            "message": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "recipients": []
+                        }
+                    },
+                    "webhookId": "1120f1461008f7"
                 }
             ]
         },
