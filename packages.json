@@ -1,5 +1,5 @@
 {
-    "packageId": "11da6b6bdc198d",
+    "packageId": "2e22265d12cb96",
     "name": "daily patrol",
     "description": "simple button to capture daily patrols",
     "buttons": [
@@ -65,6 +65,25 @@
                     "compulsory": true,
                     "questionId": "1ba3edef6dfbb",
                     "number": 4
+                },
+                {
+                    "question": "what kind of issue is it?",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "lights",
+                            "leaks",
+                            "items in communal areas",
+                            "other"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": ""
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "2b84221160e4da",
+                    "number": 5
                 }
             ],
             "navigation": {
@@ -73,59 +92,67 @@
                 "parent": null,
                 "children": [
                     {
-                        "id": "62153ab035f3c4",
+                        "id": "2b84221160e4da",
                         "type": "node",
                         "parent": "1ad8ec9991e7e",
                         "children": [
                             {
-                                "id": "53b3d923e8a36c",
+                                "id": "62153ab035f3c4",
                                 "type": "node",
-                                "parent": "62153ab035f3c4",
+                                "parent": "2b84221160e4da",
                                 "children": [
                                     {
-                                        "id": "1f55745ed83339",
+                                        "id": "53b3d923e8a36c",
                                         "type": "node",
-                                        "parent": "53b3d923e8a36c",
-                                        "children": [],
-                                        "rules": [
-                                            {
-                                                "type": "options",
-                                                "values": [
-                                                    "no"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "id": "1ba3edef6dfbb",
-                                        "type": "node",
-                                        "parent": "53b3d923e8a36c",
+                                        "parent": "62153ab035f3c4",
                                         "children": [
                                             {
-                                                "id": "2c5ad57baf6782",
-                                                "type": "subtree",
-                                                "parent": null,
-                                                "nodeid": "1f55745ed83339",
+                                                "id": "1f55745ed83339",
+                                                "type": "node",
+                                                "parent": "53b3d923e8a36c",
                                                 "children": [],
-                                                "rules": []
-                                            }
-                                        ],
-                                        "rules": [
+                                                "rules": [
+                                                    {
+                                                        "type": "options",
+                                                        "values": [
+                                                            "no"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
                                             {
-                                                "type": "options",
-                                                "values": [
-                                                    "yes"
+                                                "id": "1ba3edef6dfbb",
+                                                "type": "node",
+                                                "parent": "53b3d923e8a36c",
+                                                "children": [
+                                                    {
+                                                        "id": "2c5ad57baf6782",
+                                                        "type": "subtree",
+                                                        "parent": null,
+                                                        "nodeid": "1f55745ed83339",
+                                                        "children": [],
+                                                        "rules": []
+                                                    }
+                                                ],
+                                                "rules": [
+                                                    {
+                                                        "type": "options",
+                                                        "values": [
+                                                            "yes"
+                                                        ]
+                                                    }
                                                 ]
                                             }
-                                        ]
+                                        ],
+                                        "rules": []
                                     }
-                                ],
-                                "rules": []
+                                ]
                             }
                         ],
                         "rules": []
                     }
-                ]
+                ],
+                "defaults": {}
             },
             "webhooks": [
                 {
@@ -235,7 +262,8 @@
                 "id": "2cc526f27481bc",
                 "type": "node",
                 "parent": null,
-                "children": []
+                "children": [],
+                "defaults": {}
             },
             "webhooks": []
         }
